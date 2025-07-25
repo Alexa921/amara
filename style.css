@@ -411,7 +411,38 @@ body, html {
 .direccion img {
     width: 23px;
     height: 23px;
+    margin-top: 55px;
 }
+
+.direccion p {
+    margin-top: 50px;
+}
+
+.qr-codes {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.qr {
+    text-align: center;
+    max-width: 200px;
+}
+
+.qr img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.qr p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
 
 /* ------------------- RESPONSIVE DESIGN ------------------- */
 
@@ -548,6 +579,78 @@ body, html {
     margin-left: 15px;
   }
 }
+
+/* ------------ RESPONSIVE QR CODES -------------- */
+
+.qr-codes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.qr {
+  text-align: center;
+  max-width: 200px;
+}
+
+.qr img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.qr p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #555;
+  font-size: 16px;
+}
+
+/* --------- RESPONSIVE: max-width 900px --------- */
+@media (max-width: 900px) {
+  .qr-codes {
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .qr {
+    max-width: 160px;
+  }
+
+  .qr img {
+    max-width: 160px;
+  }
+
+  .qr p {
+    font-size: 14px;
+  }
+}
+
+/* --------- RESPONSIVE: max-width 600px --------- */
+@media (max-width: 600px) {
+  .qr-codes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr {
+    max-width: 180px;
+    margin-bottom: 1.5rem;
+  }
+
+  .qr img {
+    max-width: 180px;
+  }
+
+  .qr p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
 
 
 
